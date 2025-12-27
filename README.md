@@ -153,6 +153,8 @@ MIT License - See [LICENSE](LICENSE) for details
 
 ## Roadmap
 
+> **Community-Driven Development**: This roadmap is shaped by contributors like you! Anyone can pick up a feature, propose new ideas, or help refine existing plans. Don't wait for permission - if you see something you want to build, go for it!
+
 We're building towards a fully-featured offline AI assistant. Here's what's planned:
 
 ### Local RAG (Retrieval-Augmented Generation)
@@ -182,6 +184,16 @@ We're building towards a fully-featured offline AI assistant. Here's what's plan
 - [ ] **Search & Filter** - Full-text search across all your data
 - [ ] **Export/Import** - Backup and restore your knowledge base
 
+### iOS System Integration
+
+- [ ] **Share Extension** - Receive documents, text, and images from any app
+- [ ] **Action Extension** - "Write for me" in any text field system-wide
+- [ ] **Custom Keyboard** - AI-powered keyboard for older devices without Apple Intelligence
+- [ ] **Keyboard Extension** - Quick AI suggestions while typing anywhere
+- [ ] **Spotlight Integration** - Search your conversations from Spotlight
+- [ ] **Files App Provider** - Access your knowledge base from Files app
+- [ ] **Older Device Support** - Bring AI writing features to pre-A17 devices
+
 ### UI/UX Improvements
 
 - [ ] **iPad Support** - Optimized layout for larger screens
@@ -190,6 +202,8 @@ We're building towards a fully-featured offline AI assistant. Here's what's plan
 - [ ] **Shortcuts Integration** - Siri and automation support
 - [ ] **Dark/Light Themes** - System-aware theming
 - [ ] **Chat Export** - Share conversations as PDF/Markdown
+- [ ] **Quick Actions** - 3D Touch / Haptic Touch shortcuts
+- [ ] **Drag & Drop** - Drop files directly into chat
 
 ### Performance
 
@@ -226,6 +240,9 @@ Contributions are welcome! We'd love your help making offline AI accessible to e
 
 | Area | Description | Difficulty |
 |------|-------------|------------|
+| Share Extension | Receive content from other apps | Medium |
+| Action Extension | "Write for me" system-wide | Medium |
+| Custom Keyboard | AI keyboard for older devices | Hard |
 | FAISS Integration | Implement local vector search | Hard |
 | HNSW Index | Add HNSW-based similarity search | Hard |
 | Voice Mode | Whisper STT + TTS using Nexa SDK | Medium |
