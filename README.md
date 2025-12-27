@@ -151,6 +151,110 @@ MIT License - See [LICENSE](LICENSE) for details
 - **Hugging Face** for hosting the model files
 - All the amazing open-source model creators
 
+## Roadmap
+
+We're building towards a fully-featured offline AI assistant. Here's what's planned:
+
+### Local RAG (Retrieval-Augmented Generation)
+
+- [ ] **FAISS Integration** - Facebook AI Similarity Search for fast vector similarity
+- [ ] **HNSW Index** - Hierarchical Navigable Small World graphs for approximate nearest neighbor search
+- [ ] **Local Embeddings** - On-device text embedding models (all-MiniLM, bge-small, etc.)
+- [ ] **Document Ingestion** - Import PDFs, text files, and notes for context
+- [ ] **Smart Chunking** - Intelligent document splitting for better retrieval
+- [ ] **Binary Index Storage** - Efficient `.bin` file format for vector indices
+
+### Model Enhancements
+
+- [ ] **Custom Model Import** - Add your own GGUF models
+- [ ] **Model Quantization Options** - Choose between Q4, Q5, Q8 variants
+- [ ] **Embedding Model Selection** - Multiple embedding models for RAG
+- [ ] **Vision Models** - Local image understanding (LLaVA, etc.)
+- [ ] **Voice Input** - Whisper-based speech-to-text (Nexa SDK supported)
+- [ ] **Voice Output** - Text-to-speech for responses (Nexa SDK supported)
+- [ ] **Voice Conversations** - Full voice-to-voice chat mode
+
+### Knowledge Base
+
+- [ ] **Personal Knowledge Graph** - Connect related memories and documents
+- [ ] **Folder-Based Collections** - Organize documents by topic
+- [ ] **Automatic Tagging** - AI-powered document categorization
+- [ ] **Search & Filter** - Full-text search across all your data
+- [ ] **Export/Import** - Backup and restore your knowledge base
+
+### UI/UX Improvements
+
+- [ ] **iPad Support** - Optimized layout for larger screens
+- [ ] **macOS Catalyst** - Native Mac experience
+- [ ] **Widgets** - Quick access from home screen
+- [ ] **Shortcuts Integration** - Siri and automation support
+- [ ] **Dark/Light Themes** - System-aware theming
+- [ ] **Chat Export** - Share conversations as PDF/Markdown
+
+### Performance
+
+- [ ] **Metal Acceleration** - GPU-accelerated inference
+- [ ] **Speculative Decoding** - Faster response generation
+- [ ] **Context Caching** - Reduce memory reloads
+- [ ] **Background Processing** - Continue tasks when app is backgrounded
+- [ ] **Batch Processing** - Process multiple queries efficiently
+
+### Advanced Features
+
+- [ ] **Agents & Tools** - Function calling for local actions
+- [ ] **Web Browsing** - Optional web search with privacy
+- [ ] **Code Execution** - Safe local code sandbox
+- [ ] **Multi-Turn Planning** - Complex task decomposition
+- [ ] **Personality Customization** - System prompt templates
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! We'd love your help making offline AI accessible to everyone.
+
+### How to Contribute
+
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes**
+4. **Test thoroughly** on both iOS and macOS if possible
+5. **Submit a Pull Request**
+
+### Contribution Ideas
+
+| Area | Description | Difficulty |
+|------|-------------|------------|
+| FAISS Integration | Implement local vector search | Hard |
+| HNSW Index | Add HNSW-based similarity search | Hard |
+| Voice Mode | Whisper STT + TTS using Nexa SDK | Medium |
+| Document Parser | PDF/DOCX text extraction | Medium |
+| Embedding Models | Integrate local embedding models | Medium |
+| UI Improvements | Better chat bubbles, animations | Easy |
+| Model Support | Add new model configurations | Easy |
+| Bug Fixes | Fix issues from the tracker | Varies |
+| Documentation | Improve README, add guides | Easy |
+| Tests | Add unit and UI tests | Medium |
+| Localization | Translate to other languages | Easy |
+
+### Development Guidelines
+
+- Follow existing code style and naming conventions
+- Add comments for complex logic
+- Test on real devices when possible
+- Keep PRs focused and atomic
+- Update documentation for new features
+
+### Reporting Issues
+
+Found a bug? Have a feature request? Please [open an issue](https://github.com/chaganti-sairam/offline-ios-local-app/issues) with:
+
+- Clear description of the problem/request
+- Steps to reproduce (for bugs)
+- Device and iOS version
+- Screenshots if applicable
+
+### Code of Conduct
+
+Be respectful, inclusive, and constructive. We're all here to learn and build together.
