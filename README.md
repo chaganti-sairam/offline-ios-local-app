@@ -275,3 +275,7 @@ Found a bug? Have a feature request? Please [open an issue](https://github.com/c
 ### Code of Conduct
 
 Be respectful, inclusive, and constructive. We're all here to learn and build together.
+
+---
+
+Made with ❤️ in Vizag
